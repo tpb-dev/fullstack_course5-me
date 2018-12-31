@@ -1,0 +1,10 @@
+<div class="error" ng-if="nas.matchedItems.length === 0">
+    Nothing was matched!!!!!!!!!!!!
+</div>
+<ul>
+    <li ng-repeat="item in nas.foundItems">
+        {{ item.name }}: AKA {{ item.short_name }}. Description: {{ item.description }}
+        <button ng-click="nas.onRemove({index: $index});" class="btn btn-default btn-xs">
+            I do not want this!!!!!!!!!</button>
+    </li>
+</ul>
