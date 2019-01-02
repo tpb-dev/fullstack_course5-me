@@ -1,0 +1,30 @@
+<div class="container-fluid" ng-controller="MahInfoController as inf">
+    <h3>Hello there, here is your user information:</h3>
+    <div class="row" ng-if="inf.usr != undefined">
+        <div class="col-md-12">
+            <p>First Name: {{ inf.usr.firstName }} Last Name: {{ inf.usr.lastName }}</p>
+        </div>
+        <div class="col-md-6">
+            <p>Email: {{ inf.usr.email }}</p>
+        </div>
+        <div class="col-md-6">
+            <p>Phone: {{ inf.usr.phone }}</p>
+        </div>
+        <div class="col-md-12">
+            More info on menu items liked by you :
+        </div>
+        <div class="col-md-12">
+            <img ng-src="{{inf.apiBasePath}}/images/{{inf.item.short_name}}.jpg" alt="No image exists at the moment">
+        </div>
+        <div class="col-md-6">
+            <p>Item name: {{ inf.item.name }}</p>
+        </div>
+        <div class="col-md-6">
+            <p>Item description {{ inf.item.description }}</p>
+        </div>
+    </div>
+    <div class="row" ng-if="inf.usr == undefined" >
+        <span class="col-md-12">According to our records, you are not signed up yet.<br><a ui-sref="public.signup">Sign up RIGHT Away and Be Awesome!</a></span>
+    </div>
+
+</div>

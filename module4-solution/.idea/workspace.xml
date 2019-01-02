@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd5abb7-06c6-453b-bb0f-c89417d75ca9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/categories.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data.module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/items.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menuapp.module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menudata.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/cat-temp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/home-temp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/item-single.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/items-temp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module3-solution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module3-solution/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1bd5abb7-06c6-453b-bb0f-c89417d75ca9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -232,16 +219,15 @@
       <updated>1546226190443</updated>
       <workItem from="1546226191676" duration="603000" />
       <workItem from="1546303423039" duration="3530000" />
-      <workItem from="1546307688333" duration="2625000" />
+      <workItem from="1546307688333" duration="3014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6758000" />
+    <option name="totallyTimeSpent" value="7147000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1395" height="837" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496361" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -249,7 +235,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />

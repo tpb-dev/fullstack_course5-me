@@ -1,0 +1,12 @@
+.ac {
+    color: brown;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 350px
+}
+.ng-touched.ng-valid {
+    border: 3px whitesmoke solid;
+}
+.ng-touched.ng-invalid {
+    border: 3px whitesmoke solid;
+}

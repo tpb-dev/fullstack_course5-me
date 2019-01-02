@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="src/public/signup/tryme.css">
+<div class="container">
+    <div class="row" ng-controller="SignupController as signupControllerForForm">
+        <div class="col-sm-12">
+            <h1>Register with us</h1>
+            <form name="daRegistrationFormu" novalidate>
+                <table>
+                    <tr >
+                        <td class="col-sm-6">
+                            <input class="ac" type="text" name="firstName" ng-model="signupControllerForForm.usr.firstName" placeholder="First Name" required minlength="5" ng-maxlength="50">
+                        </td>
+                        <td  class="col-sm-6">
+                     <span ng-if="(daRegistrationFormu.firstName.$touched && daRegistrationFormu.firstName.$error.minlength) || (&& daRegistrationFormu.firstName.$touched && daRegistrationFormu.firstName.$error.required)">
+                     Username must be 5 chars+
+                     </span>
+                            <span ng-if="daRegistrationFormu.firstName.$touched && daRegistrationFormu.firstName.$error.maxlength">
+                     Username < 50 chars
+                     </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  class="col-sm-6">
+                            <input class="ac" type="text" name="lastName" placeholder="Last Name" ng-model="signupControllerForForm.usr.lastName" required ng-maxlength="25">
+                        </td>
+                        <td  class="col-sm-6">
+                     <span ng-if="daRegistrationFormu.lastName.$touched && daRegistrationFormu.lastName.$error.maxlength">
+                     Last name <= 10 chars
+                     </span>
+                            <span ng-if="daRegistrationFormu.lastName.$touched && daRegistrationFormu.lastName.$error.required">
+                     Last Name is MUST!
+                     </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-sm-6">
+                            <input type="text" class="ac" name="theBestCategoryEver" required ng-model="signupControllerForForm.usr.theBestCategoryEver" ng-change="signupControllerForForm.validateThis()" value="" placeholder="Fav menu shortcode">
+                        </td>
+                        <td>
+                     <span ng-if="!signupControllerForForm.aValidatedCategory">
+                     No such menu number exists
+                     </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  class="col-sm-6">
+                            <input class="ac " type="email" name="email" placeholder="Email" required ng-model="signupControllerForForm.usr.email">
+                        </td>
+                        <td  class="col-sm-6">
+                     <span ng-if="daRegistrationFormu.email.$touched && daRegistrationFormu.email.$invalid">
+                     Only allow valid email
+                     </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  class="col-sm-6">
+                            <input class="ac" type="number" name="phone" required pattern="(\d{10})" placeholder="US 10 digit phone" ng-model="signupControllerForForm.usr.phone">
+                        </td>
+                        <td  class="col-sm-6">
+                     <span ng-if="daRegistrationFormu.phone.$touched && daRegistrationFormu.phone.$invalid">
+                     10 digits only
+                     </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  class="col-sm-6">  <button class="btn btn-primary" ng-disabled="daRegistrationFormu.$invalid" ng-click="signupControllerForForm.setDeets()" name="submit">Submit</button></td>
+                        <td  class="col-sm-6"></td>
+                    </tr>
+                </table>
+            </form>
+            <span ng-if="signupControllerForForm.completed==true">Your form  has been successfully submitted</span>
+        </div>
+    </div>
+</div>
